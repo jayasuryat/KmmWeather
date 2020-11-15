@@ -1,0 +1,2 @@
+com/digitalcrafts/kmmweather/androidWeather/BuildConfig.java
+ com.digitalcrafts.kmmweather.androidWeather.BuildConfig

@@ -1,0 +1,166 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-23:12
+MERGED from [:shared] /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/shared/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.material:material:1.2.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/cbd23c11350fae2d7d9fec80a749d4b8/material-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/f83f01049d6e36abee1abc4d09124a26/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/a7a93d73776c3e3f7f9af3147478993e/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/13429c7dfcdfda72c48d821b23f1f430/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/d3d4e1d50cfd1fa13691a1b26182271a/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/9097e4e7146dbd341a3008fa3cc05ebf/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/4f0431d032b79c8401655aab78f69074/appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/affcaa1c7b67f79331267aea8da64fa0/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/289a6f09be56c5715f6753eeb1bca80a/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/c61ec071b8031167a6b4575cf9a2d78b/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/40affe351bc1c37a6cf87f82d3836566/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/117a53ce0fa65ccfb4ca9b6bdb79b5e0/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/859b9997b96e0957c88a8589ada992da/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/713c50b1934fb48cb46ebfd900c04eb3/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/7006c560f928ac8b5dd6c8b4c4747e78/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/3ded91dcb98da4e9a6bab281b31e10e3/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/f600df52cedd02cb1037461b90a089d8/activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.3.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/0984ebc938059dee6dbeaeebbd2fdc70/core-1.3.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/43eaaa34f5992ff4dc01c40a5422705f/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/30005d2aefef6c74be506ae03975fab5/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/dd8fb57f42166fb9f48389ef969f0d18/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/5d3133813297f57a42d547659d9a21dc/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/f005b5c1180bc2254226de7ab8350022/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/17f4c1f0ae6e90f86daf9f113543f46e/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/a17f29cda63727262470b3a8c276f679/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/2fed7ddc9691cc350a7e2898b1411aae/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/df7738333b376e8bcc7c7ac47bc164a7/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/cfd8441872863e7aeab521a45aacac0f/annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-23:12
+	package
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:3:5-58
+		INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
+		INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-23:12
+		INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-23:12
+		INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:6:22-76
+application
+ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:9:5-21:19
+MERGED from [com.google.android.material:material:1.2.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/cbd23c11350fae2d7d9fec80a749d4b8/material-1.2.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/cbd23c11350fae2d7d9fec80a749d4b8/material-1.2.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/a7a93d73776c3e3f7f9af3147478993e/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/a7a93d73776c3e3f7f9af3147478993e/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.3.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/0984ebc938059dee6dbeaeebbd2fdc70/core-1.3.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/0984ebc938059dee6dbeaeebbd2fdc70/core-1.3.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/30005d2aefef6c74be506ae03975fab5/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/30005d2aefef6c74be506ae03975fab5/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/0984ebc938059dee6dbeaeebbd2fdc70/core-1.3.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:11:9-35
+	android:allowBackup
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:10:9-36
+	android:theme
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:12:9-40
+	android:usesCleartextTraffic
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:13:9-44
+activity#com.digitalcrafts.kmmweather.androidWeather.MainActivity
+ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:14:9-20:20
+	android:name
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:14:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:18:27-74
+uses-sdk
+INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
+INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
+MERGED from [:shared] /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/shared/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:shared] /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/shared/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.2.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/cbd23c11350fae2d7d9fec80a749d4b8/material-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/cbd23c11350fae2d7d9fec80a749d4b8/material-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/f83f01049d6e36abee1abc4d09124a26/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/f83f01049d6e36abee1abc4d09124a26/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/a7a93d73776c3e3f7f9af3147478993e/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/a7a93d73776c3e3f7f9af3147478993e/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/13429c7dfcdfda72c48d821b23f1f430/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/13429c7dfcdfda72c48d821b23f1f430/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/d3d4e1d50cfd1fa13691a1b26182271a/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/d3d4e1d50cfd1fa13691a1b26182271a/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/9097e4e7146dbd341a3008fa3cc05ebf/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/9097e4e7146dbd341a3008fa3cc05ebf/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/4f0431d032b79c8401655aab78f69074/appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/4f0431d032b79c8401655aab78f69074/appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/affcaa1c7b67f79331267aea8da64fa0/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/affcaa1c7b67f79331267aea8da64fa0/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/289a6f09be56c5715f6753eeb1bca80a/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/289a6f09be56c5715f6753eeb1bca80a/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/c61ec071b8031167a6b4575cf9a2d78b/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/c61ec071b8031167a6b4575cf9a2d78b/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/40affe351bc1c37a6cf87f82d3836566/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/40affe351bc1c37a6cf87f82d3836566/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/117a53ce0fa65ccfb4ca9b6bdb79b5e0/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/117a53ce0fa65ccfb4ca9b6bdb79b5e0/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/859b9997b96e0957c88a8589ada992da/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/859b9997b96e0957c88a8589ada992da/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/713c50b1934fb48cb46ebfd900c04eb3/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/713c50b1934fb48cb46ebfd900c04eb3/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/7006c560f928ac8b5dd6c8b4c4747e78/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/7006c560f928ac8b5dd6c8b4c4747e78/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/3ded91dcb98da4e9a6bab281b31e10e3/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/3ded91dcb98da4e9a6bab281b31e10e3/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/f600df52cedd02cb1037461b90a089d8/activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/f600df52cedd02cb1037461b90a089d8/activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/0984ebc938059dee6dbeaeebbd2fdc70/core-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/0984ebc938059dee6dbeaeebbd2fdc70/core-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/43eaaa34f5992ff4dc01c40a5422705f/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/43eaaa34f5992ff4dc01c40a5422705f/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/30005d2aefef6c74be506ae03975fab5/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/30005d2aefef6c74be506ae03975fab5/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/dd8fb57f42166fb9f48389ef969f0d18/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/dd8fb57f42166fb9f48389ef969f0d18/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/5d3133813297f57a42d547659d9a21dc/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/5d3133813297f57a42d547659d9a21dc/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/f005b5c1180bc2254226de7ab8350022/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/f005b5c1180bc2254226de7ab8350022/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/17f4c1f0ae6e90f86daf9f113543f46e/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/17f4c1f0ae6e90f86daf9f113543f46e/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/a17f29cda63727262470b3a8c276f679/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/a17f29cda63727262470b3a8c276f679/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/2fed7ddc9691cc350a7e2898b1411aae/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/2fed7ddc9691cc350a7e2898b1411aae/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/df7738333b376e8bcc7c7ac47bc164a7/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/df7738333b376e8bcc7c7ac47bc164a7/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/cfd8441872863e7aeab521a45aacac0f/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/cfd8441872863e7aeab521a45aacac0f/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
+INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
+		INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
+		INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
