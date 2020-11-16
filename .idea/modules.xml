@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KmmWeather.iml" filepath="$PROJECT_DIR$/.idea/modules/KmmWeather.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidWeather/KmmWeather.androidWeather.iml" filepath="$PROJECT_DIR$/.idea/modules/androidWeather/KmmWeather.androidWeather.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.androidAndroidTestRelease.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.androidAndroidTestRelease.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.commonMain.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.commonMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.commonTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.commonTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.iosArm64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.iosArm64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.iosArm64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.iosArm64Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.iosMain.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.iosMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.iosTest.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.iosTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.iosX64Main.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.iosX64Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.iosX64Test.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/KmmWeather.shared.iosX64Test.iml" />
+    </modules>
+  </component>
+</project>

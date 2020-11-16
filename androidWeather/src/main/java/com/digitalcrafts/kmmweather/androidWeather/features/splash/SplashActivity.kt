@@ -1,9 +1,11 @@
 package com.digitalcrafts.kmmweather.androidWeather.features.splash
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.digitalcrafts.kmmweather.androidWeather.R
+import com.digitalcrafts.kmmweather.androidWeather.common.arch.BaseActivity
 
-class SplashActivity : AppCompatActivity() {
+class SplashActivity : BaseActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)

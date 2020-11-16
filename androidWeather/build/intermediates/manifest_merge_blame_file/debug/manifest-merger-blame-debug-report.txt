@@ -10,42 +10,50 @@
 9        android:targetSdkVersion="29" />
 9-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:5:22-64
-12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+11-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:5:5-81
+11-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 12-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:6:5-79
 12-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:6:22-76
-13
-14    <application
-14-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:9:5-21:19
-15        android:allowBackup="false"
-15-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:10:9-36
-16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.3.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/0984ebc938059dee6dbeaeebbd2fdc70/core-1.3.0/AndroidManifest.xml:24:18-86
-17        android:debuggable="true"
-18        android:extractNativeLibs="false"
-19        android:supportsRtl="true"
-19-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:11:9-35
-20        android:testOnly="true"
-21        android:theme="@style/AppTheme"
-21-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:12:9-40
-22        android:usesCleartextTraffic="true" >
-22-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:13:9-44
-23        <activity android:name="com.digitalcrafts.kmmweather.androidWeather.MainActivity" >
-23-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:14:9-20:20
-23-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:14:19-47
-24            <intent-filter>
-24-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:15:13-19:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:16:17-69
-25-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:16:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:18:17-77
-27-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:18:27-74
-28            </intent-filter>
-29        </activity>
-30    </application>
-31
-32</manifest>
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:7:5-67
+13-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:7:22-64
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:8:5-79
+14-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:8:22-76
+15
+16    <application
+16-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:10:5-22:19
+17        android:allowBackup="false"
+17-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:11:9-36
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.3.1] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/45dfb1d3756c0231392cb26c763c026c/core-1.3.1/AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:extractNativeLibs="false"
+21        android:supportsRtl="true"
+21-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:12:9-35
+22        android:theme="@style/AppTheme"
+22-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:13:9-40
+23        android:usesCleartextTraffic="true" >
+23-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:14:9-44
+24        <activity android:name="com.digitalcrafts.kmmweather.androidWeather.features.splash.SplashActivity" >
+24-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:15:9-20:20
+24-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:15:19-65
+25            <intent-filter>
+25-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:16:13-19:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:17:17-69
+26-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:17:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:18:17-77
+28-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:18:27-74
+29            </intent-filter>
+30        </activity>
+31        <activity android:name="com.digitalcrafts.kmmweather.androidWeather.MainActivity" />
+31-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:21:9-50
+31-->/Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:21:19-47
+32    </application>
+33
+34</manifest>
