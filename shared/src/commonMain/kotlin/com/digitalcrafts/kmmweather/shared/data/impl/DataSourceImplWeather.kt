@@ -29,6 +29,7 @@ internal class DataSourceImplWeather : DataSourceWeather {
         val response = kotlin.runCatching {
             httpClient.get<WeatherData>(Routes.getRouteForLatLong(lat, long))
         }
+        println(response)
 
         return if (response.isSuccess) RemoteResponse.success(response.getOrThrow())
         else RemoteResponse.failure(response.exceptionOrNull()!!)
