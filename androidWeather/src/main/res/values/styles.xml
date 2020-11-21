@@ -1,10 +1,56 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorAccent</item>
     </style>
+
+    <style name="BaseTextStyle" />
+
+    <style name="Text.B1" parent="BaseTextStyle">
+        <item name="fontFamily">@font/quicksand_bold_700</item>
+        <item name="android:textSize" tools:ignore="SpUsage">18dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text.B2" parent="Text.B1">
+        <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
+    </style>
+
+    <style name="Text.B3" parent="Text.B1">
+        <item name="android:textSize" tools:ignore="SpUsage">12dp</item>
+    </style>
+
+    <style name="Text.M1" parent="BaseTextStyle">
+        <item name="fontFamily">@font/quicksand_medium_500</item>
+        <item name="android:textSize" tools:ignore="SpUsage">18dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text.M2" parent="Text.M1">
+        <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
+    </style>
+
+    <style name="Text.M3" parent="Text.M1">
+        <item name="android:textSize" tools:ignore="SpUsage">12dp</item>
+    </style>
+
+    <style name="Text.R1" parent="BaseTextStyle">
+        <item name="fontFamily">@font/quicksand_regular_400</item>
+        <item name="android:textSize" tools:ignore="SpUsage">18dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text.R2" parent="Text.R1">
+        <item name="android:textSize" tools:ignore="SpUsage">14dp</item>
+    </style>
+
+    <style name="Text.R3" parent="Text.R1">
+        <item name="android:textSize" tools:ignore="SpUsage">12dp</item>
+    </style>
+
 
 </resources>
