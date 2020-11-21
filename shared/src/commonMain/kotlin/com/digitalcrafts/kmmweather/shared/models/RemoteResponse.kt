@@ -17,4 +17,3 @@ sealed class RemoteResponse<T> {
         fun <T> failure(error: Throwable): RemoteResponse<T> = Failure(error)
     }
 }
-
