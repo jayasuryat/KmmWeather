@@ -18,6 +18,16 @@ buildscript {
 group = "com.digitalcrafts.kmmweather"
 version = "1.0-SNAPSHOT"
 
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+
+        maven(url = "https://dl.bintray.com/ekito/koin")
+    }
+}
+
 repositories {
     mavenCentral()
 }

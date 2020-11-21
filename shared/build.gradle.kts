@@ -9,6 +9,26 @@ plugins {
 group = "com.digitalcrafts.kmmweather"
 version = "1.0-SNAPSHOT"
 
+android {
+    compileSdkVersion(29)
+    sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
+    defaultConfig {
+        minSdkVersion(24)
+        targetSdkVersion(29)
+        versionCode = 1
+        versionName = "1.0"
+    }
+    buildTypes {
+        getByName("release") {
+            isMinifyEnabled = false
+        }
+    }
+    lintOptions {
+        isWarningsAsErrors = true
+        isAbortOnError = true
+    }
+}
+
 repositories {
     gradlePluginPortal()
     google()
@@ -37,25 +57,29 @@ kotlin {
                 implementation("io.ktor:ktor-client-core:$ktorVersion")
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:$serializationVersion")
                 implementation("io.ktor:ktor-client-serialization:$ktorVersion")
+                implementation("com.russhwolf:multiplatform-settings-no-arg:0.6.3")
+                implementation("org.koin:koin-core:3.0.0-alpha-4")
             }
         }
 
         val androidMain by getting {
             dependencies {
                 implementation("io.ktor:ktor-client-android:$ktorVersion")
+                implementation("org.koin:koin-core:3.0.0-alpha-4")
             }
         }
 
         val iosMain by getting {
             dependencies {
                 implementation("io.ktor:ktor-client-ios:$ktorVersion")
+                implementation("org.koin:koin-core:3.0.0-alpha-4")
             }
         }
 
         val androidTest by getting {
             dependencies {
                 implementation(kotlin("test-junit"))
-                implementation("junit:junit:4.12")
+                implementation("junit:junit:4.13.1")
             }
         }
 
@@ -67,22 +91,6 @@ kotlin {
         }
 
         val iosTest by getting
-    }
-}
-
-android {
-    compileSdkVersion(29)
-    sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
-    defaultConfig {
-        minSdkVersion(24)
-        targetSdkVersion(29)
-        versionCode = 1
-        versionName = "1.0"
-    }
-    buildTypes {
-        getByName("release") {
-            isMinifyEnabled = false
-        }
     }
 }
 

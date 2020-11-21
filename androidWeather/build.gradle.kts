@@ -27,6 +27,7 @@ android {
         targetSdkVersion(29)
         versionCode = 1
         versionName = "1.0"
+        multiDexEnabled = true
     }
 
     buildTypes {
@@ -60,12 +61,16 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.0.4")
     implementation("androidx.navigation:navigation-fragment-ktx:2.3.1")
     implementation("androidx.navigation:navigation-ui-ktx:2.3.1")
+    implementation("io.coil-kt:coil:1.0.0")
 
     // Android Architecture components
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9-native-mt")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9-native-mt")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
     implementation("androidx.navigation:navigation-fragment-ktx:2.3.1")
     implementation("androidx.navigation:navigation-ui-ktx:2.3.1")
     implementation("org.jetbrains.kotlin:kotlin-stdlib:${rootProject.extra["kotlin_version"]}")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
+
+    implementation("org.koin:koin-core:3.0.0-alpha-4")
+    //implementation("androidx.preference:preference-ktx:1.1.1")
 }
