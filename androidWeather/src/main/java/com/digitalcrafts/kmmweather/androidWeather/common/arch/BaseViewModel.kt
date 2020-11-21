@@ -2,7 +2,9 @@ package com.digitalcrafts.kmmweather.androidWeather.common.arch
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
+import com.digitalcrafts.kmmweather.shared.data.definitions.DataSourcePreferences
 import com.digitalcrafts.kmmweather.shared.data.definitions.DataSourceWeather
+import com.digitalcrafts.kmmweather.shared.data.repo.RepoPreferences
 import com.digitalcrafts.kmmweather.shared.data.repo.RepoWeather
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -17,6 +19,7 @@ open class BaseViewModel(context: Application) : AndroidViewModel(context) {
     protected val ioScope: CoroutineScope by lazy { CoroutineScope(Dispatchers.IO + mJob) }
 
     protected val repoWeather: DataSourceWeather by lazy { RepoWeather() }
+    protected val repoPreferences: DataSourcePreferences by lazy { RepoPreferences() }
 
     override fun onCleared() {
         super.onCleared()

@@ -9,7 +9,7 @@ import io.ktor.client.features.json.serializer.*
 import io.ktor.client.request.*
 import kotlinx.serialization.json.Json
 
-class DataSourceImplWeather : DataSourceWeather() {
+internal class DataSourceImplWeather : DataSourceWeather {
 
     private val httpClient: HttpClient by lazy {
         HttpClient {

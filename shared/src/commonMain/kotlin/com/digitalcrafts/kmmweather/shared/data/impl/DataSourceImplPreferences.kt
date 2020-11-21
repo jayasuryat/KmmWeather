@@ -13,14 +13,14 @@ import kotlinx.serialization.json.Json
 import org.koin.core.KoinComponent
 import org.koin.core.inject
 
-class DataSourceImplPreferences : DataSourcePreferences(), KoinComponent {
+internal class DataSourceImplPreferences : DataSourcePreferences, KoinComponent {
 
     private val settings: Settings by inject()
 
-    override fun saveLatLong(latLong: Pair<Long, Long>) =
+    override fun saveLatLong(latLong: Pair<Double, Double>) =
             settings.set(PREF_KEY_LAT_LON, Json.encodeToString(latLong.fromLatLon()))
 
-    override fun getLatLong(): Pair<Long, Long>? =
+    override fun getLatLong(): Pair<Double, Double>? =
             settings.getObjectOrNull<LatLong>(PREF_KEY_LAT_LON)?.toLatLon()
 
 

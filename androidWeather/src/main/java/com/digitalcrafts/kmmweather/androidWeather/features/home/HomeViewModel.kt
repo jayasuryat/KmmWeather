@@ -29,8 +29,14 @@ class HomeViewModel(context: Application) : BaseViewModel(context) {
         ioScope.launch {
 
             while (true) {
+
                 if (_obsCoordinates.value != null) return@launch
-                _obsCoordinates.postValue(LocationProvider.getLastKnownLatLong())
+
+                val currentCoordinates: Pair<Double, Double>? =
+                        LocationProvider.getLastKnownLatLong() ?: repoPreferences.getLatLong()
+
+                _obsCoordinates.postValue(currentCoordinates)
+
                 delay(LOCATION_REQUEST_DELAY)
             }
         }
@@ -38,14 +44,23 @@ class HomeViewModel(context: Application) : BaseViewModel(context) {
 
     fun getWeatherData(coordinates: Pair<Double, Double>) {
 
+        fun updateWeatherData(weatherData: WeatherData) {
+            obsError.postValue(null)
+            _obsWeatherData.postValue(weatherData)
+            repoPreferences.saveWeatherData(weatherData)
+        }
+
         ioScope.launch {
 
             when (val weatherData = repoWeather.getWeatherData(coordinates.first, coordinates.second)) {
-                is RemoteResponse.Success -> {
-                    obsError.postValue(null)
-                    _obsWeatherData.postValue(weatherData.data)
+
+                is RemoteResponse.Success -> updateWeatherData(weatherData.data)
+
+                is RemoteResponse.Failure -> {
+                    val data = repoPreferences.getWeatherData()
+                    if (data == null) obsError.postValue(weatherData.error.message)
+                    else updateWeatherData(data)
                 }
-                is RemoteResponse.Failure -> obsError.postValue(weatherData.error.message)
             }
         }
     }

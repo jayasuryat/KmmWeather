@@ -2,11 +2,11 @@ package com.digitalcrafts.kmmweather.shared.data.definitions
 
 import com.digitalcrafts.kmmweather.shared.models.WeatherData
 
-abstract class DataSourcePreferences {
+interface DataSourcePreferences {
 
-    abstract fun saveLatLong(latLong: Pair<Long, Long>)
-    abstract fun getLatLong(): Pair<Long, Long>?
+    fun saveLatLong(latLong: Pair<Double, Double>)
+    fun getLatLong(): Pair<Double, Double>?
 
-    abstract fun saveWeatherData(weatherData: WeatherData)
-    abstract fun getWeatherData(): WeatherData?
+    fun saveWeatherData(weatherData: WeatherData)
+    fun getWeatherData(): WeatherData?
 }
