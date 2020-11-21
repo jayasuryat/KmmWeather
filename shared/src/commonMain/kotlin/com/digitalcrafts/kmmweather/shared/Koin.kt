@@ -7,7 +7,7 @@ import org.koin.dsl.module
 
 fun initKoin(appModule: Module) {
 
-    val koinApplication = startKoin {
+    startKoin {
         modules(
                 appModule,
                 coreModule,
@@ -17,7 +17,6 @@ fun initKoin(appModule: Module) {
 }
 
 private val coreModule: Module = module {
-
     single { Settings() }
 }
 
