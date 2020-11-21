@@ -14,6 +14,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name="com.digitalcrafts.kmmweather.androidWeather.KmmWeatherApplication"
         android:allowBackup="false"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -29,6 +30,15 @@
             </intent-filter>
         </activity>
         <activity android:name="com.digitalcrafts.kmmweather.androidWeather.MainActivity" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.digitalcrafts.kmmweather.androidWeather.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="com.russhwolf.settings.SettingsInitializer"
+                android:value="androidx.startup" />
+        </provider>
     </application>
 
 </manifest>

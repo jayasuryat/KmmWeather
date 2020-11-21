@@ -1113,6 +1113,7 @@ color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
 color radiobutton_themeable_attribute_color
+color red
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -1725,6 +1726,7 @@ id chronometer
 id clear_text
 id clip_horizontal
 id clip_vertical
+id coil_request_manager
 id collapseActionView
 id confirm_button
 id container
@@ -1808,6 +1810,7 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id ivWeatherIcon
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -1994,7 +1997,9 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvErrorMessage
 id tvPermissionsRationaleMessage
+id tvWeatherData
 id unchecked
 id uniform
 id unlabeled
@@ -2179,6 +2184,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string androidx_startup
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string character_counter_content_description
