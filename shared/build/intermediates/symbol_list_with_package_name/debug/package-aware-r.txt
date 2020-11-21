@@ -1,2 +1,0 @@
-com.digitalcrafts.kmmweather.android
-string androidx_startup
