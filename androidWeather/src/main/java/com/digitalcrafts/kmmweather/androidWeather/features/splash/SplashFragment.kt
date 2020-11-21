@@ -8,6 +8,7 @@ import com.digitalcrafts.kmmweather.androidWeather.R
 import com.digitalcrafts.kmmweather.androidWeather.common.arch.BaseAbstractFragment
 import com.digitalcrafts.kmmweather.androidWeather.common.arch.ViewModelFactory
 import com.digitalcrafts.kmmweather.androidWeather.common.ui.show
+import com.digitalcrafts.kmmweather.androidWeather.common.utils.LocationProvider
 import com.digitalcrafts.kmmweather.androidWeather.common.utils.PermissionManager
 import com.digitalcrafts.kmmweather.androidWeather.databinding.FragmentSplashBinding
 
@@ -35,6 +36,7 @@ class SplashFragment : BaseAbstractFragment<SplashViewModel, FragmentSplashBindi
     private fun navNext() {
 
         fun navigate() {
+            LocationProvider.startListeningForLocation()
             startActivity(Intent(this@SplashFragment.requireContext(), MainActivity::class.java))
             requireActivity().finish()
         }
