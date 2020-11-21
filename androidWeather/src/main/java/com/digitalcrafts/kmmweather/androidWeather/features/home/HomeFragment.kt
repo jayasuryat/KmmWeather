@@ -5,7 +5,7 @@ import coil.load
 import com.digitalcrafts.kmmweather.androidWeather.R
 import com.digitalcrafts.kmmweather.androidWeather.common.arch.BaseAbstractFragment
 import com.digitalcrafts.kmmweather.androidWeather.common.arch.ViewModelFactory
-import com.digitalcrafts.kmmweather.androidWeather.common.utils.isLocationEnabled
+import com.digitalcrafts.kmmweather.androidWeather.common.utils.Utils.isLocationEnabled
 import com.digitalcrafts.kmmweather.androidWeather.databinding.FragmentHomeBinding
 import com.digitalcrafts.kmmweather.shared.models.WeatherData
 
@@ -19,26 +19,25 @@ class HomeFragment : BaseAbstractFragment<HomeViewModel, FragmentHomeBinding>(R.
 
     override fun setupViews(): FragmentHomeBinding.() -> Unit = {
 
-        checkAndShowEnableLocationsMethod()
+        ivRefresh.setOnClickListener { mViewModel.reloadWeatherData() }
     }
 
     override fun setupObservers(): HomeViewModel.() -> Unit = {
 
-        obsCoordinates.observeHere { coordinates ->
-            coordinates?.let {
-                getWeatherData(it)
-            }
-        }
-
         obsWeatherData.observeHere { weatherData ->
-            weatherData?.let {
-                val iconUrl = it.getIconUrl()
+
+            obsIsDataLoading.postValue(false)
+
+            if (weatherData != null) {
+
+                val iconUrl = weatherData.getIconUrl()
                 if (!iconUrl.isNullOrEmpty()) mBinding.ivWeatherIcon.load(iconUrl)
-            }
+
+            } else checkIsLocationEnabled()
         }
     }
 
-    private fun checkAndShowEnableLocationsMethod() {
+    private fun checkIsLocationEnabled() {
         val message = if (isLocationEnabled(this@HomeFragment.requireContext())) null
         else "Please enable location"
         mViewModel.obsError.postValue(message)

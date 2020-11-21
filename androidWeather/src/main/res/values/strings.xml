@@ -2,6 +2,8 @@
 
     <string name="application_name">KMM Weather</string>
 
+    <string name="na">-</string>
+
     <string name="permission_rationale">We are not going anywhere without granting permissions buddy!</string>
     <string name="grant_permissions">Grant Permissions</string>
 </resources>

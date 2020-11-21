@@ -12,55 +12,83 @@ import kotlinx.coroutines.launch
 
 class HomeViewModel(context: Application) : BaseViewModel(context) {
 
-    private val _obsCoordinates: MutableLiveData<Pair<Double, Double>> = MutableLiveData()
-    val obsCoordinates: LiveData<Pair<Double, Double>> = _obsCoordinates
-
-    val obsError: MutableLiveData<String> = MutableLiveData()
-
     private val _obsWeatherData: MutableLiveData<WeatherData> = MutableLiveData()
     val obsWeatherData: LiveData<WeatherData> = _obsWeatherData
 
+    private val _obsCoordinates: MutableLiveData<Pair<Double, Double>> = MutableLiveData()
+    val obsCoordinates: LiveData<Pair<Double, Double>> = _obsCoordinates
+
+    val obsIsDataLoading: MutableLiveData<Boolean> = MutableLiveData(true)
+
+    val obsError: MutableLiveData<String> = MutableLiveData()
+
     init {
-        listenForLocationUpdated()
+        ioScope.launch { loadWeatherData() }
     }
 
-    private fun listenForLocationUpdated() {
+    private suspend fun loadWeatherData() {
 
-        ioScope.launch {
+        val cachedData = repoPreferences.getWeatherData()
 
-            while (true) {
+        if (cachedData != null) {
+            _obsWeatherData.postValue(cachedData)
+            _obsCoordinates.postValue(repoPreferences.getLatLong())
+            return
+        }
 
-                if (_obsCoordinates.value != null) return@launch
+        val cachedCoordinates: Pair<Double, Double>? = repoPreferences.getLatLong()
 
-                val currentCoordinates: Pair<Double, Double>? =
-                        LocationProvider.getLastKnownLatLong() ?: repoPreferences.getLatLong()
+        if (cachedCoordinates != null) {
+            getWeatherData(cachedCoordinates)
+            return
+        }
 
-                _obsCoordinates.postValue(currentCoordinates)
+        listenForLocationUpdates()
+    }
 
-                delay(LOCATION_REQUEST_DELAY)
+    private suspend fun listenForLocationUpdates() {
+
+        var trial = 0
+
+        while (trial <= LOCATION_REQUEST_MAX_TRY) {
+
+            val currentCoordinates: Pair<Double, Double>? = LocationProvider.getLastKnownLatLong()
+
+            if (currentCoordinates != null) {
+                getWeatherData(currentCoordinates)
+                return
             }
+
+            delay(LOCATION_REQUEST_DELAY)
+            trial++
         }
     }
 
-    fun getWeatherData(coordinates: Pair<Double, Double>) {
+    fun reloadWeatherData() {
+        val coordinates = _obsCoordinates.value ?: return
+        obsIsDataLoading.postValue(true)
+        ioScope.launch { getWeatherData(coordinates) }
+    }
+
+    private suspend fun getWeatherData(coordinates: Pair<Double, Double>) {
+
+        _obsCoordinates.postValue(coordinates)
 
         fun updateWeatherData(weatherData: WeatherData) {
             obsError.postValue(null)
             _obsWeatherData.postValue(weatherData)
+            repoPreferences.saveLatLong(coordinates)
             repoPreferences.saveWeatherData(weatherData)
         }
 
-        ioScope.launch {
+        when (val weatherData = repoWeather.getWeatherData(coordinates.first, coordinates.second)) {
 
-            when (val weatherData = repoWeather.getWeatherData(coordinates.first, coordinates.second)) {
+            is RemoteResponse.Success -> updateWeatherData(weatherData.data)
 
-                is RemoteResponse.Success -> updateWeatherData(weatherData.data)
-
-                is RemoteResponse.Failure -> {
-                    val data = repoPreferences.getWeatherData()
-                    if (data == null) obsError.postValue(weatherData.error.message)
-                    else updateWeatherData(data)
-                }
+            is RemoteResponse.Failure -> {
+                val data = repoPreferences.getWeatherData()
+                if (data == null) obsError.postValue(weatherData.error.message)
+                else updateWeatherData(data)
             }
         }
     }
@@ -68,5 +96,6 @@ class HomeViewModel(context: Application) : BaseViewModel(context) {
     companion object {
 
         private const val LOCATION_REQUEST_DELAY: Long = 5 * 1000
+        private const val LOCATION_REQUEST_MAX_TRY: Int = 6
     }
 }

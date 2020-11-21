@@ -8,6 +8,8 @@
 
         <import type="android.view.View" />
 
+        <import type="com.digitalcrafts.kmmweather.androidWeather.common.utils.Utils" />
+
         <variable
             name="viewModel"
             type="com.digitalcrafts.kmmweather.androidWeather.features.home.HomeViewModel" />
@@ -18,50 +20,125 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:animateLayoutChanges="true"
-        android:padding="32dp">
-
-        <ProgressBar
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:visibility='@{viewModel.obsWeatherData == null ? View.VISIBLE : View.GONE }'
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/tvWeatherData"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text='@{viewModel.obsWeatherData.toString()}'
-            android:visibility='@{viewModel.obsWeatherData != null ? View.VISIBLE : View.GONE }'
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        tools:ignore="SpUsage,ContentDescription">
 
         <ImageView
-            android:id="@+id/ivWeatherIcon"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintDimensionRatio="1:1"
+            android:id="@+id/ivRefresh"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="32dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/icon_refresh"
+            android:visibility='@{(viewModel.obsCoordinates != null &amp;&amp; viewModel.obsIsDataLoading == false) ? View.VISIBLE : View.GONE}'
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.33"
-            tools:ignore="ContentDescription" />
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="32dp"
+            android:visibility='@{viewModel.obsIsDataLoading ? View.VISIBLE : View.GONE }'
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clWeatherData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="32dp"
+            android:visibility='@{viewModel.obsWeatherData != null ? View.VISIBLE : View.GONE}'
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvTime"
+                style="@style/Text.R2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text='@{viewModel.obsWeatherData != null ? (Utils.INSTANCE.getDisplayTime(viewModel.obsWeatherData.dt)) : @string/na }'
+                android:textAllCaps="true"
+                android:textColor="@color/mediumGrey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Jan 17, 2020" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                style="@style/Text.B1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text='@{(viewModel.obsWeatherData.name ?? @string/na) + ", " +(viewModel.obsWeatherData.sys.country ?? @string/na)}'
+                app:layout_constraintStart_toStartOf="@id/tvTime"
+                app:layout_constraintTop_toBottomOf="@id/tvTime"
+                tools:text="Surat, In" />
+
+            <!--android:foreground="?android:attr/selectableItemBackground"-->
+
+            <ImageView
+                android:id="@+id/ivWeatherIcon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTemp"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTemp" />
+
+            <TextView
+                android:id="@+id/tvTemp"
+                style="@style/Text.B1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:text='@{(String.valueOf(viewModel.obsWeatherData.main.temp) ?? @string/na) + "° C"}'
+                android:textColor="@color/white"
+                android:textSize="72dp"
+                app:layout_constraintBottom_toTopOf="@+id/tvTempFeelsLike"
+                app:layout_constraintEnd_toStartOf="@+id/ivWeatherIcon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:marqueeEnabled='@{true}'
+                tools:text="32° C" />
+
+            <TextView
+                android:id="@+id/tvTempFeelsLike"
+                style="@style/Text.R1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text='@{"Feels like " + (String.valueOf(viewModel.obsWeatherData.main.feels_like) ?? @string/na) + "° C"}'
+                android:textColor="@color/mediumGrey"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/tvWeatherDescription"
+                app:layout_constraintStart_toStartOf="@+id/tvTemp"
+                app:layout_constraintTop_toBottomOf="@+id/tvTemp"
+                tools:text="Feels like 26° C" />
+
+            <TextView
+                android:id="@+id/tvWeatherDescription"
+                style="@style/Text.M1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text='@{"TODO"}'
+                android:textColor="@color/white"
+                android:textSize="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvTempFeelsLike"
+                app:layout_constraintTop_toBottomOf="@+id/tvTempFeelsLike"
+                tools:text="Heavy Rain" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:id="@+id/tvErrorMessage"
-            android:layout_width="0dp"
+            style="@style/Text.R1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
             android:gravity="center"
-            android:text='@{viewModel.obsError}'
+            android:text='@{viewModel.obsError ?? @string/na}'
             android:textColor="@color/red"
-            android:visibility='@{viewModel.obsError != null ? View.VISIBLE : View.GONE }'
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:text="Error fetching data" />
+            tools:text="Please enable location" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
