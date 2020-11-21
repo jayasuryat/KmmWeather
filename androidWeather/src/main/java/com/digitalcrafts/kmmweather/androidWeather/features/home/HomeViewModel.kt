@@ -9,6 +9,7 @@ import com.digitalcrafts.kmmweather.shared.models.RemoteResponse
 import com.digitalcrafts.kmmweather.shared.models.WeatherData
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import java.util.*
 
 class HomeViewModel(context: Application) : BaseViewModel(context) {
 
@@ -17,6 +18,9 @@ class HomeViewModel(context: Application) : BaseViewModel(context) {
 
     private val _obsCoordinates: MutableLiveData<Pair<Double, Double>> = MutableLiveData()
     val obsCoordinates: LiveData<Pair<Double, Double>> = _obsCoordinates
+
+    private val _obsDescription: MutableLiveData<String> = MutableLiveData()
+    val obsDescription: LiveData<String> = _obsDescription
 
     val obsIsDataLoading: MutableLiveData<Boolean> = MutableLiveData(true)
 
@@ -91,6 +95,15 @@ class HomeViewModel(context: Application) : BaseViewModel(context) {
                 else updateWeatherData(data)
             }
         }
+    }
+
+    fun bakeDescription(weatherData: WeatherData) {
+
+        val description = weatherData.weather.firstOrNull()?.description
+        if (description.isNullOrEmpty()) return
+        val formattedDescription = description.split(' ')
+                .joinToString(" ") { it.capitalize(Locale.getDefault()) }
+        _obsDescription.postValue(formattedDescription)
     }
 
     companion object {

@@ -30,6 +30,8 @@ class HomeFragment : BaseAbstractFragment<HomeViewModel, FragmentHomeBinding>(R.
 
             if (weatherData != null) {
 
+                bakeDescription(weatherData)
+
                 val iconUrl = weatherData.getIconUrl()
                 if (!iconUrl.isNullOrEmpty()) mBinding.ivWeatherIcon.load(iconUrl)
 

@@ -6,6 +6,7 @@ import android.location.LocationManager
 import android.os.Build
 import android.provider.Settings
 import com.digitalcrafts.kmmweather.androidWeather.common.Constants.DATE_DISPLAY_FORMAT
+import com.digitalcrafts.kmmweather.shared.models.Weather
 import java.text.SimpleDateFormat
 import java.util.*
 
