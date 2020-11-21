@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-25:12
+ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-27:12
 MERGED from [androidx.databinding:databinding-adapters:4.1.1] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/0a6af6828f53e5016297d63d4b8934a4/databinding-adapters-4.1.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:4.1.1] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/da9b69e50b1d7add82da253d9a30ed44/databinding-runtime-4.1.1/AndroidManifest.xml:17:1-24:12
 MERGED from [:shared] /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/shared/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
@@ -68,20 +68,20 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/jayasurya/
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/213f61b88c546f893422039e219868f1/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/461b25d25afa314f4cc1c7b29d067847/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/fb0cd8ccfac3cf8b0e82d831c70db868/annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:3:5-58
 		INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
 		INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
-		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-25:12
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-27:12
 		INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
-		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-25:12
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:1-27:12
 		INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:2:11-69
@@ -102,7 +102,7 @@ ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/
 	android:name
 		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:8:22-76
 application
-ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:10:5-23:19
+ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:10:5-25:19
 MERGED from [com.google.android.material:material:1.2.1] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/0f9f7f50d9c26e0f9884b0844882fca1/material-1.2.1/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.1] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/0f9f7f50d9c26e0f9884b0844882fca1/material-1.2.1/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/ebfea57ac771c533753c86d3cbb7f6a6/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
@@ -118,33 +118,37 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/jayasurya/.gradle/ca
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.2] /Users/jayasurya/.gradle/caches/transforms-2/files-2.1/a027099065647643475358540d64bcbd/core-1.3.2/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:15:9-35
+	android:label
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:14:9-49
+	android:icon
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:13:9-43
 	android:allowBackup
 		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:12:9-36
 	android:theme
-		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:14:9-40
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:16:9-40
 	android:usesCleartextTraffic
-		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:15:9-44
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:17:9-44
 	android:name
 		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:11:9-46
 activity#com.digitalcrafts.kmmweather.androidWeather.features.splash.SplashActivity
-ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:16:9-21:20
+ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:18:9-23:20
 	android:name
-		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:16:19-65
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:18:19-65
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:17:13-20:29
+ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:19:13-22:29
 action#android.intent.action.MAIN
-ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:18:17-69
+ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:18:25-66
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:19:17-77
+ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:19:27-74
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:21:27-74
 activity#com.digitalcrafts.kmmweather.androidWeather.MainActivity
-ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:22:9-50
+ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:24:9-50
 	android:name
-		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:22:19-47
+		ADDED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml:24:19-47
 uses-sdk
 INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/jayasurya/Documents/JayaSurya/PersonalProjects/KMM/KmmWeather/androidWeather/src/main/AndroidManifest.xml
