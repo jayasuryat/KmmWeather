@@ -2,7 +2,15 @@ import SwiftUI
 import shared
 
 func greet() -> String {
-    return Greeting().greeting()
+    
+    let lat : Double = 21.1702
+    let lon : Double = 72.8311
+    
+    let repoWeather: DataSourceWeather =  RepoWeather() 
+    
+    repoWeather.getWeatherData(lat: <#T##Double#>, long: <#T##Double#>, completionHandler: <#T##(RemoteResponse<WeatherData>?, Error?) -> Void#>)
+    
+    return PlatformUtils().getRandomUUID()
 }
 
 struct ContentView: View {
