@@ -22,8 +22,9 @@ object LocationProvider : LocationListener {
 
     fun init(context: Context) {
         this.context = context
-        startListeningForLocationUpdates()
     }
+
+    fun startListeningForLocation() = startListeningForLocationUpdates()
 
     fun getLastKnownLatLong(): Pair<Double, Double>? {
         mLastKnownLocation?.let { lastKnownLocation ->

@@ -5,6 +5,7 @@ import android.content.pm.PackageManager
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
 
+
 class PermissionManager(private val host: Fragment) {
 
     fun areAllPermissionsGranted(): Boolean = checkPermissions()
