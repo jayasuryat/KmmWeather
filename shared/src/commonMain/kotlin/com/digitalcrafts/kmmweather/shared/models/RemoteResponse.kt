@@ -3,15 +3,13 @@ package com.digitalcrafts.kmmweather.shared.models
 sealed class RemoteResponse<T> {
 
     abstract val isSuccess: Boolean
-    open val error: Throwable? = null
 
     class Success<T>(val data: T) : RemoteResponse<T>() {
         override val isSuccess: Boolean = true
     }
 
-    class Failure<T>(error: Throwable) : RemoteResponse<T>() {
+    class Failure<T>(val error: Throwable) : RemoteResponse<T>() {
         override val isSuccess: Boolean = false
-        override val error: Throwable? = error
     }
 
     companion object {
