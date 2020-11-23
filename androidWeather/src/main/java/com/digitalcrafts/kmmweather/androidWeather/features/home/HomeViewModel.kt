@@ -99,7 +99,7 @@ class HomeViewModel(context: Application) : BaseViewModel(context) {
 
     fun bakeDescription(weatherData: WeatherData) {
 
-        val description = weatherData.weather.firstOrNull()?.description
+        val description = weatherData.weather.firstOrNull()?.descr
         if (description.isNullOrEmpty()) return
         val formattedDescription = description.split(' ')
                 .joinToString(" ") { it.capitalize(Locale.getDefault()) }

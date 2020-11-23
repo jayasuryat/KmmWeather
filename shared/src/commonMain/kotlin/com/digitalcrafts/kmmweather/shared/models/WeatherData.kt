@@ -1,5 +1,6 @@
 package com.digitalcrafts.kmmweather.shared.models
 
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -22,7 +23,11 @@ data class WeatherData(
 data class Coord(val lon: Double, val lat: Double)
 
 @Serializable
-data class Weather(val id: Int, val main: String, val description: String, val icon: String)
+data class Weather(val id: Int,
+                   val main: String,
+                   @SerialName("description")
+                   val descr: String,
+                   val icon: String)
 
 @Serializable
 data class Wind(val speed: Double, val deg: Int)
