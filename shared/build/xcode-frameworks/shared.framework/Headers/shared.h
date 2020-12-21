@@ -339,16 +339,16 @@ __attribute__((swift_name("Sys.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Weather")))
 @interface SharedWeather : SharedBase
-- (instancetype)initWithId:(int32_t)id main:(NSString *)main description:(NSString *)description icon:(NSString *)icon __attribute__((swift_name("init(id:main:description:icon:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithId:(int32_t)id main:(NSString *)main descr:(NSString *)descr icon:(NSString *)icon __attribute__((swift_name("init(id:main:descr:icon:)"))) __attribute__((objc_designated_initializer));
 - (int32_t)component1 __attribute__((swift_name("component1()")));
 - (NSString *)component2 __attribute__((swift_name("component2()")));
 - (NSString *)component3 __attribute__((swift_name("component3()")));
 - (NSString *)component4 __attribute__((swift_name("component4()")));
-- (SharedWeather *)doCopyId:(int32_t)id main:(NSString *)main description:(NSString *)description icon:(NSString *)icon __attribute__((swift_name("doCopy(id:main:description:icon:)")));
+- (SharedWeather *)doCopyId:(int32_t)id main:(NSString *)main descr:(NSString *)descr icon:(NSString *)icon __attribute__((swift_name("doCopy(id:main:descr:icon:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly, getter=description_) NSString *description __attribute__((swift_name("description")));
+@property (readonly) NSString *descr __attribute__((swift_name("descr")));
 @property (readonly) NSString *icon __attribute__((swift_name("icon")));
 @property (readonly) int32_t id __attribute__((swift_name("id")));
 @property (readonly) NSString *main __attribute__((swift_name("main")));
